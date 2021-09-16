@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru"> 
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>main</title>
+	<meta name="description" content="">
+
+
+</head>
+
+<body>
+
+<script>
+	"use strict";
+	alert("Задача №3")
+	//сначало складываются чисо 10 +10 получаем 20 и потом контатенация "10" и результат 2010
+	let result1 = 10 + 10 + "10";
+	console.log(result1);
+	//так как текстовый формат числа в середине по этому конкатенируетвсе числа 101010
+	let result2 = 10 + "10" + 10;
+	console.log(result2);
+	//+ +"10" превращает в числовой формат и сажение дает нам резуьтат 30
+	let result3 = 10 + 10 + +"10";
+	console.log(result3);
+	//-"" превращается в -0 деление на -0 равняется минус бесконечность и резуьтатом будет -Infinity
+	let result4 = 10/ -"";
+	console.log(result4);
+	//деление на текстовый символ не возможно результат NaN
+	let result5 = 10 / +"2,5";
+	console.log(result5);
+</script>
+
+
+</body>
+</html>
