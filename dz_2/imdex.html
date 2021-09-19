@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    "use strict";
+        //пример 1
+        let a = 1, b = 1, c, d;
+        c = ++a;
+        alert(c); // ответ: 2 к а прибавляется сначало 1 потом "отдает" переменую
+        //пример 2
+        d = b++;
+        alert(d); //ответ: 1 сначало отдает переменную а, потом присваевает 
+        //пример 3
+        c = 2 + ++a;
+        alert(c); //ответ: 5 в а уже хранится 2 и к ней плюсуется 1 и того 3 и уже плюсуется 2
+        //пример 4
+        d = 2 + b++;
+        alert(d); //ответ: 4 в а уже хранится 2 и (к ней плюсуется после того как отдаст 1 ) и уже плюсуется 2
+        alert(a); //3 хранится 3 из предедущих операций 
+        alert(b); //3 хранится 3 из предедущих операций 
+    </script>
+</body>
+</html>
